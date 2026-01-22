@@ -88,3 +88,47 @@ body{
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(91, 192,255,0.3);
 }
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #3fa9f5, #5bc0ff);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+body.light-mode {
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+body.light-mode .hero-image {
+  background: linear-gradient(180deg, #e6f7ff, #c2e9ff);
+}
+body.light-mode .badge {
+  background: linear-gradient(to bottom, #3fa9f5, transparent);
+  color: var(--text-dark);
+}
+body.light-mode .hero-content p {
+  color: #0b1c2d;
+}
+body.light-mode .stat h3 {
+  color: #0b1c2d;
+}
+body.light-mode .stat span {
+  color: #4a5568;
+}
+body.light-mode .btn {
+  background: linear-gradient(90deg, #2c5282, #4a5568);
+  color: white;
+}
