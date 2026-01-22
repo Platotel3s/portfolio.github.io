@@ -1,266 +1,43 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Fullstack Developer | Nama Anda</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" class="logo">Dev<span>Portfolio</span></a>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#about">Tentang</a>
-                <a href="#contact">Kontak</a>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Hai, Saya <span>Nama Anda</span></h1>
-            <h2>Fullstack Developer</h2>
-            <p>Saya membangun aplikasi web yang indah, fungsional, dan responsif dengan teknologi terbaru. Fokus pada solusi yang efisien dan pengalaman pengguna yang luar biasa.</p>
-            
-            <div class="btn-container">
-                <a href="#portfolio" class="btn">Lihat Portfolio</a>
-                <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
-            </div>
-            
-            <div class="tech-stack">
-                <div class="tech-item">
-                    <i class="fab fa-js"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-react"></i>
-                    <span>React</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-node-js"></i>
-                    <span>Node.js</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-database"></i>
-                    <span>MongoDB</span>
-                </div>
-            </div>
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-image">
+        <img src="me.png" alt="profile">
+      </div>
+      <div class="hero-content">
+        <span class="badge">ABOUT ME</span>
+        <h1>
+          I AM AVAILABLE FOR SOFTWARE ENGINEER PROJECT <br> 
+          <span>SOFTWARE ENGINEER </span>PROJECT
+        </h1>
+        <p>
+          I'm a college student of Muhammadiyah University Prof. Dr. Hamka As a computer science student, i'm looking for a company for my development skills, such as writing code, writing documentations, maintenance code, etc. Usually, i'm struggling in laravel, ReactJS, TypeScript for website development. For mobile, i'm interested in React-Native & Flutter.
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <h3>20+</h3>
+            <span>Google Review</span>
+          </div>
+          <div class="stat">
+            <h3>2+</h3>
+            <span>Years Experience</span>
+          </div>
+          <div class="stat">
+            <h3>5+</h3>
+            <span>Award Winning</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="section" id="portfolio">
-        <div class="section-title">
-            <h2>Project Terbaru</h2>
-            <p>Beberapa karya terbaik yang telah saya selesaikan</p>
-        </div>
-        
-        <div class="portfolio-container">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="project1.jpg" alt="E-commerce App" class="project-image">
-                <div class="project-info">
-                    <h3>Aplikasi E-commerce</h3>
-                    <p>Platform e-commerce lengkap dengan sistem pembayaran, keranjang belanja, dan manajemen produk.</p>
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="project2.jpg" alt="Task Management" class="project-image">
-                <div class="project-info">
-                    <h3>Sistem Manajemen Tugas</h3>
-                    <p>Aplikasi produktivitas untuk mengelola tugas dengan fitur kolaborasi tim dan notifikasi real-time.</p>
-                    <div class="project-tags">
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">Socket.io</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="project3.jpg" alt="Social Media Dashboard" class="project-image">
-                <div class="project-info">
-                    <h3>Dashboard Media Sosial</h3>
-                    <p>Analitik media sosial dengan visualisasi data dan laporan yang dapat disesuaikan.</p>
-                    <div class="project-tags">
-                        <span class="tag">Next.js</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Chart.js</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 4 -->
-            <div class="project-card">
-                <img src="project4.jpg" alt="API Service" class="project-image">
-                <div class="project-info">
-                    <h3>Layanan API Kustom</h3>
-                    <p>Backend service yang dapat diskalakan dengan autentikasi JWT dan dokumentasi Swagger.</p>
-                    <div class="project-tags">
-                        <span class="tag">NestJS</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">Docker</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> API Docs</a>
-                        <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 5 -->
-            <div class="project-card">
-                <img src="project5.jpg" alt="Mobile App" class="project-image">
-                <div class="project-info">
-                    <h3>Aplikasi Mobile</h3>
-                    <p>Aplikasi React Native untuk platform iOS dan Android dengan fitur offline-first.</p>
-                    <div class="project-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">Redux</span>
-                        <span class="tag">Firebase</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class="fab fa-app-store"></i> App Store</a>
-                        <a href="#"><i class="fab fa-google-play"></i> Play Store</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 6 -->
-            <div class="project-card">
-                <img src="project6.jpg" alt="CMS" class="project-image">
-                <div class="project-info">
-                    <h3>Sistem Manajemen Konten</h3>
-                    <p>Headless CMS dengan antarmuka drag-and-drop dan dukungan multi-bahasa.</p>
-                    <div class="project-tags">
-                        <span class="tag">Strapi</span>
-                        <span class="tag">GraphQL</span>
-                        <span class="tag">AWS S3</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="section-title">
-            <h2>Tentang Saya</h2>
-            <p>Profil dan pengalaman profesional</p>
-        </div>
-        
-        <div class="about-content">
-            <div class="about-image">
-                <img src="profile.jpg" alt="Profil Saya" style="width:100%">
-            </div>
-            
-            <div class="about-text">
-                <h3>Fullstack Developer dengan Pengalaman 5+ Tahun</h3>
-                <p>Saya berspesialisasi dalam membangun aplikasi web modern menggunakan JavaScript/Typescript di seluruh stack teknologi. Saya memiliki passion untuk menciptakan solusi teknis yang elegan dan efisien.</p>
-                <p>Saya percaya dalam pendekatan holistik terhadap pengembangan perangkat lunak, mempertimbangkan tidak hanya fungsionalitas tetapi juga kinerja, keamanan, dan pengalaman pengguna.</p>
-                
-                <div class="timeline">
-                    <h4>Pengalaman Kerja:</h4>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-date">2021 - Sekarang</div>
-                        <div class="timeline-title">Senior Fullstack Developer</div>
-                        <div class="timeline-company">Tech Solutions Inc.</div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-date">2019 - 2021</div>
-                        <div class="timeline-title">Fullstack Developer</div>
-                        <div class="timeline-company">Digital Creative Agency</div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-date">2017 - 2019</div>
-                        <div class="timeline-title">Frontend Developer</div>
-                        <div class="timeline-company">Startup XYZ</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="section-title">
-            <h2>Hubungi Saya</h2>
-            <p>Silakan hubungi untuk proyek atau kesempatan kolaborasi</p>
-        </div>
-        
-        <div class="contact-form">
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Nama</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="subject">Subjek</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Pesan</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                
-                <button type="submit" class="btn">Kirim Pesan</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p class="copyright">© 2023 Nama Anda. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+        <a href="#" class="btn">GET IN TOUCH</a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
