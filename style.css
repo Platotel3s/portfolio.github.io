@@ -113,7 +113,7 @@ body.light-mode {
   color: var(--text-dark);
 }
 body.light-mode .hero-image {
-  background: linear-gradient(180deg, #e6f7ff, #c2e9ff);
+  background: linear-gradient(180deg, var(--bg-dark), #c2e9ff);
 }
 body.light-mode .badge {
   background: linear-gradient(to bottom, #3fa9f5, transparent);
@@ -131,6 +131,10 @@ body.light-mode .stat span {
 body.light-mode .btn {
   background: linear-gradient(90deg, #2c5282, #4a5568);
   color: white;
+}
+body.light-mode .btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px var(--bg-dark);
 }
 @media(max-width:1024px){
   .hero-container{
@@ -276,7 +280,10 @@ body.light-mode .btn {
 }
 @media (max-width: 768px) {
   body.light-mode .hero-image {
-    background: linear-gradient(180deg, #f0f9ff, #d4edff);
+    background: linear-gradient(180deg, var(--bg-dark), #d4edff);
+  }
+  h1.light-mode > span{
+    color: var(--text-dark);
   }
 }
 @media (max-width: 768px) {
