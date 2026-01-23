@@ -113,7 +113,7 @@ body.light-mode {
   color: var(--text-dark);
 }
 body.light-mode .hero-image {
-  background: linear-gradient(180deg, var(--bg-dark), #c2e9ff);
+  background: linear-gradient(180deg, var(--bg-dark), var(--bg-light));
 }
 body.light-mode .badge {
   background: linear-gradient(to bottom, #3fa9f5, transparent);
@@ -280,7 +280,7 @@ body.light-mode .btn:hover{
 }
 @media (max-width: 768px) {
   body.light-mode .hero-image {
-    background: linear-gradient(180deg, var(--bg-dark), #d4edff);
+    background: linear-gradient(180deg, var(--bg-dark), var(--bg-light));
   }
   h1.light-mode > span{
     color: var(--text-dark);
