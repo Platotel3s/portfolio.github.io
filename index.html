@@ -16,7 +16,7 @@
           <img src="me.png" alt="profile">
         </div>
         <div class="hero-content">
-          <span class="badge">Syaiful Yudha Platoteles</span>
+          <span class="badge" id="auto-type">Syaiful Yudha Platoteles</span>
           <h1>
             I AM AVAILABLE FOR SOFTWARE ENGINEER PROJECT <br> 
             <span>SOFTWARE ENGINEER </span>PROJECT
@@ -44,5 +44,14 @@
     </section>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+      var typed=new Typed(".badge",{
+        strings:["Syaiful Yudha Platoteles"],
+        typeSpeed:150,
+        backSpeed:100,
+        looped:true,
+      })
+    </script>
   </body>
 </html>
