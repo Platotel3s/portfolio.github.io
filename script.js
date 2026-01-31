@@ -90,15 +90,15 @@ if (window.matchMedia) {
     }
   });
 }
-      document.addEventListener('DOMContentLoaded', () => {
-        const autoTypeElement = document.getElementById('auto-type');
-        if (autoTypeElement) {
-          var typed = new Typed(autoTypeElement, {
-            strings: ["DevOps Engineer","Software Engineer"],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true,
-          });
-        }
-      });
+document.addEventListener('DOMContentLoaded', () => {
+  const autoTypeElement = document.getElementById('auto-type');
+  if (autoTypeElement) {
+    var typed = new Typed(autoTypeElement, {
+      strings: ["DevOps Engineer","Software Engineer"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+    });
+  }
+});
 
