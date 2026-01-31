@@ -3,41 +3,119 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <title>Yudha Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
   </head>
   <body>
-    <button id="theme-toggle" class="theme-toggle">
-      <span class="theme-icon">🌙</span>
-    </button>
-    <section class="hero">
-      <div class="hero-container">
-        <div class="hero-image">
-          <img src="me5.png" alt="profile">
+    <header>
+      <button id="theme-toggle" class="theme-toggle">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <h2>Syaiful Yudha Platoteles</h2>
+      <span class="auto-type" id="auto-type"></span>
+    </header>
+    <main>
+      <div class="container">
+        <div class="profile">
+          <div class="frame">
+            <img src="me5.png" alt="Profile Photo">
+          </div>
+          <div class="identity">
+            <div class="about">
+              <i class="fa-solid fa-address-card"></i>
+              <span>
+              Computer Science background with a strong interest in software development.
+              Experienced in web development using Laravel, ReactJS, and TypeScript, and
+              interested in mobile development with React Native and Flutter.
+              Comfortable working with code implementation, documentation, and maintenance,
+              and continuously improving technical skills through hands-on projects.
+              </span>            
+            </div>
+          </div>
         </div>
-        <div class="hero-content">
-          <span id="auto-type" class="badge"></span>
-          <h1> I AM AVAILABLE FOR SOFTWARE ENGINEER PROJECT <br> <span>SOFTWARE ENGINEER </span>PROJECT </h1>
-          <p> I'm a college student of Muhammadiyah University Prof. Dr. Hamka As a computer science student, i'm looking for a company for my development skills, such as writing code, writing documentations, maintenance code, etc. Usually, i'm struggling in laravel, ReactJS, TypeScript for website development. For mobile, i'm interested in React-Native & Flutter. </p> 
-          <a href="https://github.com/Platotel3s" class="btn">GET IN TOUCH</a>
+
+        <div class="stacks">
+          <canvas id="myRadar"></canvas>
+        </div>
+
+        <div class="projects">
+          <div class="project-card">
+            <div class="icon-project">
+              <i class="fa-brands fa-laravel"></i>
+            </div>
+            <div class="desc-project">
+              <h3>SiDapur</h3>
+              <p>Website-based E-Commerce Application for Shopping Kitchen Needs</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="icon-project">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <div class="desc-project">
+              <h3>PRESTIKA</h3>
+              <p>Uhamka Student Achievement Submission Website</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="icon-project">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="desc-project">
+              <h3>Service TUI</h3>
+              <p>Terminal App for service management on Linux</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="icon-project">
+              <i class="fa-brands fa-rust"></i>
+            </div>
+            <div class="desc-project">
+              <h3>Matematika.rs</h3>
+              <p>Collaboration project to create a mathematics library for Rust</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="icon-project">
+              <i class="fa-brands fa-flutter"></i>
+            </div>
+            <div class="desc-project">
+              <h3>MobileDevs-Learning</h3>
+              <p>Flutter learning modules compiled based on personal experience</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <script src="script.js"></script>
+    </main>
+    <footer>
+      <a href="https://github.com/Platotel3s">
+        <div class="brand-card">
+          <i class="fa-brands fa-github"></i>
+          <h3>GitHub</h3>
+        </div>
+      </a>
+      <button class="brand-card" id="downloadPdf">
+        <i class="fa-solid fa-file"></i>
+        <h3>Download CV</h3>
+      </button>
+      <a href="https://www.instagram.com/yudh4_8/">
+        <div class="brand-card">
+          <i class="fa-brands fa-instagram"></i>
+          <h3>Instagram</h3>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/syaiful-yudha-platoteles/">
+        <div class="brand-card">
+          <i class="fa-brands fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+        </div>
+      </a>
+    </footer>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const autoTypeElement = document.getElementById('auto-type');
-        if (autoTypeElement) {
-          var typed = new Typed(autoTypeElement, {
-            strings: ["Syaiful Yudha Platoteles"],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true,
-          });
-        }
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
+
+
